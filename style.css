@@ -700,3 +700,217 @@ a { text-decoration: none; }
   .lagoon-section, .nature-section, .special-section { padding: 5rem 0; }
   .lagoon-stat { align-items: center; text-align: center; width: 100%; }
 }
+```css
+/* =============================================================
+   18. CONTACT US
+============================================================= */
+
+.contact-section {
+  background: var(--off-white);
+  padding: 6.5rem 0;
+}
+
+.contact-header {
+  max-width: 700px;
+  margin-bottom: 3.5rem;
+}
+
+.contact-intro {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: #55605e;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Contact information box */
+
+.contact-info {
+  height: 100%;
+  background: var(--lagoon-deep);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--off-white);
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  color: rgba(250, 246, 239, 0.78);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Individual contact details */
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid rgba(250, 246, 239, 0.15);
+}
+
+.contact-detail:last-child {
+  border-bottom: 1px solid rgba(250, 246, 239, 0.15);
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(134, 174, 176, 0.15);
+  border: 1px solid rgba(134, 174, 176, 0.35);
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.contact-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--tide);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.contact-detail p {
+  color: var(--off-white);
+  font-size: 0.92rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Contact form */
+
+.contact-form-box {
+  height: 100%;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.contact-form-box h3 {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--lagoon-deep);
+  margin-bottom: 1.8rem;
+}
+
+.contact-form-box label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--lagoon-deep);
+  margin-bottom: 0.45rem;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  border: 1px solid #d7d9d5;
+  border-radius: 0.65rem;
+  background: #fcfbf8;
+  color: var(--charcoal);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  padding: 0.85rem 1rem;
+  outline: none;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.contact-form-box input {
+  height: 50px;
+}
+
+.contact-form-box textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form-box input::placeholder,
+.contact-form-box textarea::placeholder {
+  color: #8a9491;
+}
+
+.contact-form-box input:focus,
+.contact-form-box textarea:focus {
+  border-color: var(--ocean-blue);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(28, 110, 140, 0.12);
+}
+
+/* Send button */
+
+.contact-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  border: 1px solid var(--lagoon-deep);
+  border-radius: 999px;
+  background: var(--lagoon-deep);
+  color: var(--off-white);
+  padding: 0.9rem 1.8rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.contact-submit span {
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-submit:hover {
+  background: var(--ocean-blue);
+  border-color: var(--ocean-blue);
+  transform: translateY(-2px);
+}
+
+.contact-submit:hover span {
+  transform: translateX(4px);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .contact-section {
+    padding: 5rem 0;
+  }
+
+  .contact-info,
+  .contact-form-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-info h3,
+  .contact-form-box h3 {
+    font-size: 1.55rem;
+  }
+
+}
+
